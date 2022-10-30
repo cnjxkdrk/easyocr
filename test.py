@@ -49,11 +49,13 @@ def main():
     # img_path = './image/crop3.PNG'
     # img_path = './image/search.shopping.naver.com_search_all_query=B3ECB898%95&cat_id=&frm=NVSHATC.png'
     # img_path = './image/HighResSrc.png'
-    img_path = './image/2K.png'
+    # img_path = './image/2K.png'
+    # img_path = './image/1080p.png'
+    img_path = './image/2K_GOM.png'
 
     img = cv2.imread(img_path, cv2.IMREAD_COLOR)
     height, width, _ = img.shape
-    CROP_HEIGHT = 2000
+    CROP_HEIGHT = 1000
     pages = height//CROP_HEIGHT + 1
     for idx in range(pages):
         # final page
